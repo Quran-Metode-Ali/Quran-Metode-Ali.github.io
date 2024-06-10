@@ -6,7 +6,7 @@
     <title>Edspert.id</title>
     <link rel="stylesheet" href="./src/style.css">
     <!-- Dev Mode -->
-    <!-- <style>
+    <style>
         div {
         border: 1px;
         border-color: red;
@@ -17,10 +17,58 @@
         border-color: rgb(123, 255, 0);
         border-style: dashed;
     }
-    </style> -->
+    </style>
 </head>
 <body>
     <!-- Nav Start -->
+        <header class="bg-white absolute top-0 left-0 w-full flex items-center z-10">
+            <div class="container mx-auto">
+                <div class="flex flex-row relative">
+                    <div class="px-4 basis-1/3">
+                        <img src="./src/Logo.png" alt="Logo" class="py-6 block">
+                    </div>
+                    <div class="flex items-center px-4 basis-1/3">
+                        <button id="hamburger" name="hamburger" type="button" class="block absolute right-6 top-6 lg:hidden">
+                            <span class="w-[30px] h-[2px] my-2 block bg-slate-950 transition duration-300 ease-in-out origin-top-left"></span>
+                            <span class="w-[30px] h-[2px] my-2 block bg-slate-950 transition duration-300 ease-in-out"></span>
+                            <span class="w-[30px] h-[2px] my-2 block bg-slate-950 transition duration-300 ease-in-out origin-bottom-left"></span>
+                        </button>
+                        <nav id="nav-menu" class="lg:static lg:shadow-none lg:rounded-none lg:bg-transparent lg:max-w-full lg:block hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full">
+                            <ul class="block lg:flex">
+                                <li class="group">
+                                    <a href="#" class="py-2 mx-8 flex text-[base] text-[#667085] font-[600] group-hover:text-[#6941C6]">Home</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#" class="py-2 mx-8 flex text-base text-slate-950 group-hover:text-[#6941C6]">Product</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#" class="py-2 mx-8 flex text-base text-slate-950 group-hover:text-[#6941C6]">Resources</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#" class="py-2 mx-8 flex text-base text-slate-950 group-hover:text-[#6941C6]">Pricing</a>
+                                </li>
+                                <li class="group lg:hidden">
+                                    <a href="#" class="py-2 mx-8 flex text-base text-slate-950 group-hover:text-[#6941C6]">Log in</a>
+                                </li>
+                                <li class="group lg:hidden">
+                                    <a href="#" class="py-2 mx-8 flex text-base text-slate-950 group-hover:text-[#6941C6]">Sign up</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="basis-1/3 flex items-center justify-end px-4">
+                        <ul class="hidden lg:flex">
+                            <li class="group">
+                                <a href="#" class="py-2 mx-8 flex text-base text-slate-950 group-hover:text-[#6941C6]">Log in</a>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="py-2 mx-8 flex text-base text-slate-950 group-hover:text-[#6941C6]">Sign up</a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </header>
     <!-- Nav End -->
 
     <!-- Hero Start -->
@@ -48,9 +96,14 @@
             </div>
         </div>
     </section>
+    
     <!-- Hero End -->
 
     <!-- Product Start-->
     <!-- Product End -->
+    <div class="mb-[1000px]">
+
+    </div>
+    <script src="./src/script.js"></script>
 </body>
 </html>
