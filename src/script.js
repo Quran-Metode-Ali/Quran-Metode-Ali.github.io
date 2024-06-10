@@ -18,3 +18,19 @@ hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('hamburger-active');
     navMenu.classList.toggle('hidden');
 });
+
+// Show More Products
+const showButton = document.querySelector('#show');
+const products = [
+    document.querySelector('#product-4'),
+    document.querySelector('#product-5'),
+    document.querySelector('#product-6')
+];
+
+showButton.addEventListener('click', function() {
+    products.forEach(product => {
+        product.classList.remove('hidden');
+        product.classList.add('flex');
+    });
+    showButton.classList.add('hidden');
+});
