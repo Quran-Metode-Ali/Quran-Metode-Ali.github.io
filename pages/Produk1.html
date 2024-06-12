@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edspert | WebDev 1</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <!-- Dev Mode -->
+    <!-- <style>
+        div {
+        border: 1px;
+        border-color: red;
+        border-style: dashed;
+    }
+    section {
+        border: 1px;
+        border-color: rgb(123, 255, 0);
+        border-style: dashed;
+    }
+    </style> -->
+</head>
+<body>
+
+    <!-- Nav Start -->
+    <header class="bg-white absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container mx-auto">
+            <div class="flex flex-row relative">
+                <div class="px-4 basis-1/3">
+                    <img src="../src/Logo.png" alt="Logo" class="py-6 block">
+                </div>
+                <div class="flex items-center px-4 basis-1/3">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-6 top-6 lg:hidden">
+                        <span class="w-[30px] h-[2px] my-2 block bg-slate-950 transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="w-[30px] h-[2px] my-2 block bg-slate-950 transition duration-300 ease-in-out"></span>
+                        <span class="w-[30px] h-[2px] my-2 block bg-slate-950 transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="nav-menu" class="lg:static lg:shadow-none lg:rounded-none lg:bg-transparent lg:max-w-full lg:block hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#" class="py-2 mx-8 flex text-[base] text-[#667085] font-[600] leading-[24px] group-hover:text-[#6941C6]">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="py-2 mx-8 flex text-base text-[#667085] font-[600] leading-[24px] group-hover:text-[#6941C6]">Product</a>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="py-2 mx-8 flex text-base text-[#667085] font-[600] leading-[24px] group-hover:text-[#6941C6]">Resources</a>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="py-2 mx-8 flex text-base text-[#667085] font-[600] leading-[24px] group-hover:text-[#6941C6]">Pricing</a>
+                            </li>
+                            <li class="group lg:hidden">
+                                <a href="#" class="py-2 mx-8 flex text-base text-[#667085] font-[600] leading-[24px] group-hover:text-[#6941C6]">Log in</a>
+                            </li>
+                            <li class="group lg:hidden">
+                                <a href="#" class="py-2 mx-8 flex text-base text-[#667085] font-[600] leading-[24px] group-hover:text-[#6941C6]">Sign up</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="basis-1/3 flex items-center justify-end px-4">
+                    <ul class="hidden lg:flex">
+                        <button onclick="location.href='Login.html'" class="h-[44px] w-[95px] bg-transparent text-[#667085] text-[16px] font-[600] leading-[24px] hover:text-[#7F56D9] ">Login</button>
+                        <button class="h-[44px] w-[95px] bg-[#7F56D9] text-white rounded-[8px] px-[18px] py-[10px] hover:bg-[#6e4bcf] active:bg-[#5d3fc5] focus:outline-none focus:ring-2 focus:ring-[#7F56D9] focus:ring-opacity-50">Sign up</button>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Nav End -->
+    
+    <!-- Hero Start -->
+    <section class="py-[96px] gap-[64px] bg-[#F9FAFB] h-auto mt-[70px]">
+        <!-- content -->
+        <div class="container xl:px-[32px] xl:gap-[96px] lg:gap-[50px] lg:flex mx-auto">
+            <img src="../src/Image.png" alt="Banner" class="w-[500px] h-[500px] mx-auto mb-[20px] lg:mb-0">
+            <div class="gap-[64px]  h-auto">
+                <!-- heading -->
+                <div class="h-[156px] gap-[20px]">
+                    <div class="h-[156px] gap-[12px]">
+                        <p class="text-[#6941C6] font-[600] text-[16px] leading-[24px]">Intensive Bootcamp</p>
+                        <p class="text-[#101828] font-[600] text-[48px] leading-[60px]">Web Development Bootcamp</p>
+                    </div>
+                </div>
+                <!-- content 1 -->
+                <div class="h-auto gap-[48px] flex flex-row">                  
+                    <div class="gap-[32px] h-auto">
+                        <div class="gap-[20px] h-auto">
+                            <div class="gap-[12px] w-[200px]">
+                                <p class="text-[#7F56D9] font-[600] text-[60px] leading-[72px]">400+</p>
+                                <p class="text-[#101828] font-[500] text-[18px] leading-[28px]">Portfolio Siswa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gap-[32px] h-auto">
+                        <div class="gap-[20px] h-auto">
+                            <div class="gap-[12px]">
+                                <p class="text-[#7F56D9] font-[600] text-[60px] leading-[72px]">80%</p>
+                                <p class="text-[#101828] font-[500] text-[18px] leading-[28px]">Alumni diterima kerja</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content 2 -->
+                <div class="h-auto gap-[48px] flex flex-row">                  
+                    <div class="gap-[32px] h-auto">
+                        <div class="gap-[20px] h-auto">
+                            <div class="gap-[12px] w-[200px]">
+                                <p class="text-[#7F56D9] font-[600] text-[60px] leading-[72px]">10k</p>
+                                <p class="text-[#101828] font-[500] text-[18px] leading-[28px]">Anggota Komunitas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gap-[32px] h-auto">
+                        <div class="gap-[20px] h-auto">
+                            <div class="gap-[12px]">
+                                <p class="text-[#7F56D9] font-[600] text-[60px] leading-[72px]">2000+</p>
+                                <p class="text-[#101828] font-[500] text-[18px] leading-[28px]">Testimoni</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+    <hr class="h-[1px] w-3/4 bg-white mx-auto">
+
+    <!-- Team Start -->
+    <section class="gap-[64px] py-[96px] h-auto bg-white">
+        <!-- content 1 -->
+        <div class="gap-[32px] px-[32px] h-auto mb-[50px]">
+            <div class="gap-[40px] h-auto">
+                <div class="gap-[20px]">
+                    <div class="gap-[20px] h-[44px]">
+                        <p class="text-[#101828] font-[600] text-[32px] leading-[44px] text-center">Mentor</p>
+                    </div>
+                    <p class="h-[30px] text-[#667085] font-[400] text-[20px] leading-[30px] text-center">Dipandu oleh Mentor Terbaik Kami</p>
+                </div>
+            </div>
+        </div>
+        <!-- content 2 -->
+        <div class="gap-[64px] px-[32px] h-auto">
+            <!-- 1 -->
+            <div class="mentors gap-[32px] h-auto flex flex-wrap justify-center">
+                <!-- mentor 1 -->
+                <div class="p-[24px] bg-[#F9FAFB] h-[316px] w-[280px]">
+                    <div class="gap-[20px] h-[268px] w-[232px] flex flex-col justify-center">
+                        <img src="../src/Avatar 1.png" alt="Avatar1" class="w-[80px] h-[80px] self-center">
+                        <!-- Text -->
+                        <div class="gap-[16px] h-[168px] w-[232px]">
+                            <div class="h-[52px] w-[232px]">
+                                <p class="text-[#101828] font-[600] text-[18px] leading-[28px] text-center">Agnes Amanta</p>
+                                <p class="text-[#6941C6] font-[400] text-[16px] leading-[24px] text-center">Founder & CEO</p>
+                            </div>
+                            <p class="text-[#667085] font-[400] text-[16px] leading-[24px] text-center">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</p>
+                        </div>
+                        <!-- Sosmed -->
+                        <div class="gap-[16px] h-[20px] w-[232px] flex justify-center">
+                            <a href="">
+                                <img src="../src/Tweeter.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Linked.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Web.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- mentor 2 -->
+                <div class="p-[24px] bg-[#F9FAFB] h-[316px] w-[280px]">
+                    <div class="gap-[20px] h-[268px] w-[232px] flex flex-col justify-center">
+                        <img src="../src/Avatar2.png" alt="Avatar1" class="w-[80px] h-[80px] self-center">
+                        <!-- Text -->
+                        <div class="gap-[16px] h-[168px] w-[232px]">
+                            <div class="h-[52px] w-[232px]">
+                                <p class="text-[#101828] font-[600] text-[18px] leading-[28px] text-center">Kajen Permadi</p>
+                                <p class="text-[#6941C6] font-[400] text-[16px] leading-[24px] text-center">Engineering Manager</p>
+                            </div>
+                            <p class="text-[#667085] font-[400] text-[16px] leading-[24px] text-center">Lead engineering teams at Figma, Pitch, and Protocol Labs.</p>
+                        </div>
+                        <!-- Sosmed -->
+                        <div class="gap-[16px] h-[20px] w-[232px] flex justify-center">
+                            <a href="">
+                                <img src="../src/Tweeter.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Linked.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Web.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- mentor 3 -->
+                <div class="p-[24px] bg-[#F9FAFB] h-[316px] w-[280px]">
+                    <div class="gap-[20px] h-[268px] w-[232px] flex flex-col justify-center">
+                        <img src="../src/Avatar3.png" alt="Avatar1" class="w-[80px] h-[80px] self-center">
+                        <!-- Text -->
+                        <div class="gap-[16px] h-[168px] w-[232px]">
+                            <div class="h-[52px] w-[232px]">
+                                <p class="text-[#101828] font-[600] text-[18px] leading-[28px] text-center">Natsir Naradi</p>
+                                <p class="text-[#6941C6] font-[400] text-[16px] leading-[24px] text-center">Product Manager</p>
+                            </div>
+                            <p class="text-[#667085] font-[400] text-[16px] leading-[24px] text-center">Former PM for Linear, Lambda School, and On Deck.</p>
+                        </div>
+                        <!-- Sosmed -->
+                        <div class="gap-[16px] h-[20px] w-[232px] flex justify-center">
+                            <a href="">
+                                <img src="../src/Tweeter.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Linked.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Web.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- mentor 4 -->
+                <div class="p-[24px] bg-[#F9FAFB] h-[316px] w-[280px]">
+                    <div class="gap-[20px] h-[268px] w-[232px] flex flex-col justify-center">
+                        <img src="../src/Avatar4.png" alt="Avatar1" class="w-[80px] h-[80px] self-center">
+                        <!-- Text -->
+                        <div class="gap-[16px] h-[168px] w-[232px]">
+                            <div class="h-[52px] w-[232px]">
+                                <p class="text-[#101828] font-[600] text-[18px] leading-[28px] text-center">Rahimah Gilda</p>
+                                <p class="text-[#6941C6] font-[400] text-[16px] leading-[24px] text-center">Frontend Developer</p>
+                            </div>
+                            <p class="text-[#667085] font-[400] text-[16px] leading-[24px] text-center">Former frontend dev for Linear, Coinbase, and Postscript.</p>
+                        </div>
+                        <!-- Sosmed -->
+                        <div class="gap-[16px] h-[20px] w-[232px] flex justify-center">
+                            <a href="">
+                                <img src="../src/Tweeter.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Linked.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Web.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- mentor 5 -->
+                <div class="hidden md:flex p-[24px] bg-[#F9FAFB] h-[316px] w-[280px]">
+                    <div class="gap-[20px] h-[268px] w-[232px] flex flex-col justify-center">
+                        <img src="../src/Avatar.png" alt="Avatar1" class="w-[80px] h-[80px] self-center">
+                        <!-- Text -->
+                        <div class="gap-[16px] h-[168px] w-[232px]">
+                            <div class="h-[52px] w-[232px]">
+                                <p class="text-[#101828] font-[600] text-[18px] leading-[28px] text-center">Suartini Novi</p>
+                                <p class="text-[#6941C6] font-[400] text-[16px] leading-[24px] text-center">Backend Developer</p>
+                            </div>
+                            <p class="text-[#667085] font-[400] text-[16px] leading-[24px] text-center">Lead backend dev at Clearbit. Former Clearbit and Loom.</p>
+                        </div>
+                        <!-- Sosmed -->
+                        <div class="gap-[16px] h-[20px] w-[232px] flex justify-center">
+                            <a href="">
+                                <img src="../src/Tweeter.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Linked.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Web.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- mentor 6 -->
+                <div class="hidden md:flex p-[24px] bg-[#F9FAFB] h-[316px] w-[280px]">
+                    <div class="gap-[20px] h-[268px] w-[232px] flex flex-col justify-center">
+                        <img src="../src/Avatar (1).png" alt="Avatar1" class="w-[80px] h-[80px] self-center">
+                        <!-- Text -->
+                        <div class="gap-[16px] h-[168px] w-[232px]">
+                            <div class="h-[52px] w-[232px]">
+                                <p class="text-[#101828] font-[600] text-[18px] leading-[28px] text-center">Hannah Airlangga</p>
+                                <p class="text-[#6941C6] font-[400] text-[16px] leading-[24px] text-center">Product Designer</p>
+                            </div>
+                            <p class="text-[#667085] font-[400] text-[16px] leading-[24px] text-center">Founding design team at Figma. Former Pleo, Stripe, and Tile.</p>
+                        </div>
+                        <!-- Sosmed -->
+                        <div class="gap-[16px] h-[20px] w-[232px] flex justify-center">
+                            <a href="">
+                                <img src="../src/Tweeter.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Linked.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Web.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- mentor 7 -->
+                <div class="hidden md:flex p-[24px] bg-[#F9FAFB] h-[316px] w-[280px]">
+                    <div class="gap-[20px] h-[268px] w-[232px] flex flex-col justify-center">
+                        <img src="../src/Avatar (2).png" alt="Avatar1" class="w-[80px] h-[80px] self-center">
+                        <!-- Text -->
+                        <div class="gap-[16px] h-[168px] w-[232px]">
+                            <div class="h-[52px] w-[232px]">
+                                <p class="text-[#101828] font-[600] text-[18px] leading-[28px] text-center">Firman Kurniawan</p>
+                                <p class="text-[#6941C6] font-[400] text-[16px] leading-[24px] text-center">UX Researcher</p>
+                            </div>
+                            <p class="text-[#667085] font-[400] text-[16px] leading-[24px] text-center">Lead user research for Slack. Contractor for Netflix and Udacity.</p>
+                        </div>
+                        <!-- Sosmed -->
+                        <div class="gap-[16px] h-[20px] w-[232px] flex justify-center">
+                            <a href="">
+                                <img src="../src/Tweeter.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Linked.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Web.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- mentor 8 -->
+                <div class="hidden md:flex p-[24px] bg-[#F9FAFB] h-[316px] w-[280px]">
+                    <div class="gap-[20px] h-[268px] w-[232px] flex flex-col justify-center">
+                        <img src="../src/Avatar (3).png" alt="Avatar1" class="w-[80px] h-[80px] self-center">
+                        <!-- Text -->
+                        <div class="gap-[16px] h-[168px] w-[232px]">
+                            <div class="h-[52px] w-[232px]">
+                                <p class="text-[#101828] font-[600] text-[18px] leading-[28px] text-center">Mario Agustinus</p>
+                                <p class="text-[#6941C6] font-[400] text-[16px] leading-[24px] text-center">Customer Success</p>
+                            </div>
+                            <p class="text-[#667085] font-[400] text-[16px] leading-[24px] text-center">Lead CX at Wealthsimple. Former PagerDuty and Sqreen.</p>
+                        </div>
+                        <!-- Sosmed -->
+                        <div class="gap-[16px] h-[20px] w-[232px] flex justify-center">
+                            <a href="">
+                                <img src="../src/Tweeter.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Linked.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="">
+                                <img src="../src/Web.png" alt="" class="h-[20px] w-[20px]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team End -->
+    <script src="../src/script.js"></script>
+</body>
+</html>
